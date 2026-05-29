@@ -10,14 +10,14 @@ The repository starts with this structure:
 agents.md
 doc/
   instructions/
-    agents-md.md
+    agents.md
   persudo/
 
 src/
 data/
 ```
 
-- `agents.md` is the agent entry point. Keep it concise, roughly 100 lines when possible. It should explain how to navigate the repository, link to deeper instructions, and name the rules that must always be in context. See `doc/instructions/agents-md.md` for when to split details out of `agents.md`.
+- `agents.md` is the agent entry point. Keep it concise, roughly 100 lines when possible. It should explain how to navigate the repository, link to deeper instructions, and name the rules that must always be in context. See `doc/instructions/agents.md` for when to split details out of `agents.md`.
 - `doc/instructions/` is the durable knowledge base for cross-cutting guidance. Store architecture notes, product intent, design rules, decision logs, execution plans, quality expectations, and other maintained instructions here. Treat it as the source of truth when `agents.md` points elsewhere.
 - `doc/persudo/` is the module blueprint layer. Its top-level folders define the same modules that appear under `src/`, and each module folder keeps source design and test design together before implementation.
 - `src/` stores implementation modules. Top-level module folders under `src/` should match the modules defined under `doc/persudo/`; tests live inside the module they verify.

@@ -16,7 +16,7 @@ Assume the target directory is empty unless the user says otherwise.
 agents.md
 doc/
   instructions/
-    agents-md.md
+    agents.md
   persudo/
 
 src/
@@ -30,7 +30,7 @@ If the directory is not empty, preserve existing files. Do not overwrite an exis
 ## Template Contents
 
 - `assets/starter/agents.md` contains the starter agent guide and architecture section.
-- `assets/starter/doc/instructions/agents-md.md` contains guidance for keeping `agents.md` short and moving deeper material into `doc/instructions/`.
+- `assets/starter/doc/instructions/agents.md` contains guidance for keeping `agents.md` short and moving deeper material into `doc/instructions/`.
 - Empty starter folders under `doc/persudo/`, `src/`, and `data/` may need placeholder files if the destination system does not preserve empty directories.
 
 ## Safety
