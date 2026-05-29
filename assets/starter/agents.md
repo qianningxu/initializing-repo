@@ -1,17 +1,12 @@
 # Agent Guide
 
-## What Belongs Here
+## Repository Knowledge
 
-Keep `agents.md` as the small entry point for agents. This file should contain:
+Repository knowledge is the system of record. Treat this file as the map, not the manual.
 
-- The repository map.
-- Non-negotiable rules agents must always follow.
-- Pointers to deeper instruction files.
-- Short workflow reminders that apply to most tasks.
+`agents.md` is intentionally short so agents can keep the entry point in context while still having room for the task, code, and relevant docs. Durable guidance belongs in `doc/instructions/`; module blueprints belong in `doc/persudo/`.
 
-Do not turn this file into a manual. Put detailed, durable guidance in `doc/instructions/`.
-
-## Repository Map
+## Map
 
 ```text
 agents.md
@@ -25,20 +20,23 @@ src/
 data/
 ```
 
-- `agents.md`: agent entry point, repo map, and non-negotiable rules.
-- `doc/instructions/`: durable instructions and cross-cutting source of truth.
-- `doc/persudo/`: module blueprints that mirror code files in `src/`.
+- `agents.md`: stable table of contents and always-on rules.
+- `doc/instructions/`: durable knowledge base and source of truth.
+- `doc/persudo/`: code-file blueprints, organized by module.
 - `src/`: implementation modules; tests live inside the module they verify.
-- `data/`: raw domain data, seed content, imports, fixtures, and structured knowledge.
+- `data/`: raw domain data, imports, fixtures, seed content, and structured knowledge.
 
-## Required Reading
+## Navigation
 
-- Read `doc/instructions/context-management.md` before expanding this file or creating new instruction docs.
+- Read `doc/instructions/context-management.md` before expanding `agents.md` or creating instruction files.
 - Read `doc/instructions/code-mirroring.md` before adding, moving, renaming, or deleting code files.
+- Add new durable guidance under `doc/instructions/`, named by content.
+- Add code blueprints under `doc/persudo/`, mirroring code files only.
 
-## Working Rules
+## Rules
 
-- Keep durable decisions in `doc/instructions/`, not in chat.
+- Do not treat chat as the source of truth; record durable decisions in repository docs.
+- Do not pack detailed procedures into `agents.md`; leave a pointer to the relevant instruction file.
 - Keep module folders aligned across `doc/persudo/` and `src/`.
-- Mirror code files only; do not mirror folders, data, generated files, config, assets, or non-code artifacts unless explicitly requested.
-- Keep `agents.md` concise; move detailed guidance into focused instruction files and leave pointers here.
+- Mirror code files only. Do not mirror folders, data, generated files, config, assets, or non-code artifacts unless explicitly requested.
+- When docs and code disagree, update the stale side in the same change or record the known delta before moving on.
