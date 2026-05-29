@@ -18,6 +18,7 @@ doc/
   instructions/
     architecture.md
     context-management.md
+    writing-instructions.md
     code-mirroring.md
   persudo/
 
