@@ -1,5 +1,3 @@
-# Code Mirroring
-
 Use `doc/persudo/` as the blueprint layer for code files under `src/`.
 
 ## Rule

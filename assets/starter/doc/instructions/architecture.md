@@ -1,5 +1,3 @@
-# Architecture
-
 Use the repository structure as the durable map of project knowledge, implementation, and data.
 
 ## Structure

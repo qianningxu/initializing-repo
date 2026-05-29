@@ -1,5 +1,3 @@
-# Context Management
-
 Use repository instructions as a structured knowledge base, not as one large manual. `agents.md` is the entry point; focused files under `doc/instructions/` are the source of truth.
 
 ## agents.md
