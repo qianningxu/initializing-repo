@@ -1,6 +1,6 @@
 ---
 name: initializing-repo
-description: Initialize a repository with the user's standard starter structure and agent guide. Use when the user asks to initialize, scaffold, reset, or standardize a repo structure containing agents.md, doc/instructions, doc/persudo, src/functions, src/test, and data, or asks for an architecture section explaining that structure.
+description: Initialize a repository with the user's standard starter structure and agent guide. Use when the user asks to initialize, scaffold, reset, or standardize a repo structure containing agents.md, doc/instructions, doc/persudo, src, and data, or asks for an architecture section explaining that structure.
 ---
 
 # Initializing Repo
@@ -18,13 +18,11 @@ doc/
   persudo/
 
 src/
-  functions/
-  test/
 data/
 ```
 
 2. Write `agents.md` with the `Architecture` section below.
-3. Leave `doc/instructions/`, `doc/persudo/`, `src/functions/`, `src/test/`, and `data/` ready for future files.
+3. Leave `doc/instructions/`, `doc/persudo/`, `src/`, and `data/` ready for future files.
 4. Verify the resulting tree.
 
 If the directory is not empty, preserve existing files and patch `agents.md` in place instead of overwriting it.
@@ -47,29 +45,31 @@ doc/
   persudo/
 
 src/
-  functions/
-  test/
 data/
 ```
 
 - `agents.md` is the agent entry point. Keep it concise, roughly 100 lines when possible. It should explain how to navigate the repository, link to deeper instructions, and name the rules that must always be in context.
 - `doc/instructions/` is the durable knowledge base for cross-cutting guidance. Store architecture notes, product intent, design rules, decision logs, execution plans, quality expectations, and other maintained instructions here. Treat it as the source of truth when `agents.md` points elsewhere.
-- `doc/persudo/` is the module blueprint layer. Its top-level folders define the same modules that appear under `src/functions/` and `src/test/`, and each module folder keeps source design and test design together before implementation.
-- `src/functions/` stores implementation modules. Top-level module folders under `src/functions/` should match the modules defined under `doc/persudo/`.
-- `src/test/` stores verification modules. Top-level module folders under `src/test/` should match the modules defined under `doc/persudo/` and implemented under `src/functions/`.
+- `doc/persudo/` is the module blueprint layer. Its top-level folders define the same modules that appear under `src/`, and each module folder keeps source design and test design together before implementation.
+- `src/` stores implementation modules. Top-level module folders under `src/` should match the modules defined under `doc/persudo/`; tests live inside the module they verify.
 - `data/` stores raw domain data, seed content, imported records, fixtures, and structured knowledge consumed by the project. Keep it separate from `src/` unless there is an explicit import path, migration, or runtime data model.
 
 Use modules as the big structural mapping across planning, implementation, and verification:
 
 ```text
 doc/persudo/<module>/
-  src.md
-  test.md
-src/functions/<module>/
-src/test/<module>/
+  <code-file>.md
+  test/
+    <test-code-file>.md
+src/<module>/
+  <code-file>
+  test/
+    <test-code-file>
 ```
 
-The `doc/persudo/<module>/` folder is where source behavior and test behavior are designed together. `src.md` describes the intended implementation for `src/functions/<module>/`; `test.md` describes the intended verification for `src/test/<module>/`. When a module is added, moved, renamed, split, or merged, update the blueprint, source, and test locations together. Promote shared code or shared instructions only after a pattern repeats.
+Mirroring applies to code files and code files only. Every durable code file under `src/<module>/` should have a corresponding markdown blueprint under `doc/persudo/<module>/`; every durable test code file under `src/<module>/test/` should have a corresponding markdown blueprint under `doc/persudo/<module>/test/`. Folders, data files, generated files, config files, assets, and non-code artifacts do not automatically need mirrored markdown files.
+
+When a module is added, moved, renamed, split, or merged, update the blueprint and source locations together. When a code file is added, removed, moved, or renamed, update its mirrored markdown file in the same change. Promote shared code or shared instructions only after a pattern repeats.
 ````
 
 ## Safety
@@ -77,6 +77,8 @@ The `doc/persudo/<module>/` folder is where source behavior and test behavior ar
 - Do not delete user files while initializing the repo.
 - Do not overwrite an existing `agents.md`; patch it in place.
 - Do not move domain data into `src/` unless the user explicitly asks for that migration.
-- Keep module folders structurally aligned across `doc/persudo/`, `src/functions/`, and `src/test/`.
-- When adding a module, create or update `doc/persudo/<module>/src.md`, `doc/persudo/<module>/test.md`, `src/functions/<module>/`, and `src/test/<module>/` together when relevant.
+- Keep module folders structurally aligned across `doc/persudo/` and `src/`.
+- Mirror code files only. Do not create markdown mirrors for folders, data, generated files, config, assets, or non-code artifacts unless the user explicitly asks.
+- When adding a module, create or update `doc/persudo/<module>/` and `src/<module>/` together when relevant.
+- When adding a code file, create or update the matching markdown blueprint under `doc/persudo/<module>/`.
 - Mention any existing folders that remain outside the standard structure.
