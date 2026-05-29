@@ -17,7 +17,6 @@ agents.md
 doc/
   instructions/
     context-management.md
-    instruction-creation.md
   persudo/
 
 src/
@@ -41,8 +40,7 @@ If the directory is not empty, preserve existing files. Do not overwrite an exis
 ## Template Contents
 
 - `assets/starter/agents.md` contains the starter agent guide and architecture section.
-- `assets/starter/doc/instructions/context-management.md` contains guidance for keeping `agents.md` short and moving deeper material into `doc/instructions/`.
-- `assets/starter/doc/instructions/instruction-creation.md` contains guidance for naming, scoping, and maintaining instruction files.
+- `assets/starter/doc/instructions/context-management.md` contains guidance for keeping `agents.md` short and naming, scoping, and maintaining instruction files.
 - Empty starter folders under `doc/persudo/`, `src/`, and `data/` may need placeholder files if the destination system does not preserve empty directories.
 
 ## Safety

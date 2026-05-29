@@ -11,7 +11,6 @@ agents.md
 doc/
   instructions/
     context-management.md
-    instruction-creation.md
   persudo/
 
 src/
@@ -26,8 +25,7 @@ data/
 
 ## Required Reading
 
-- Read `doc/instructions/context-management.md` before expanding this file.
-- Read `doc/instructions/instruction-creation.md` before creating or reorganizing instruction docs.
+- Read `doc/instructions/context-management.md` before expanding this file or creating new instruction docs.
 
 ## Mirroring Rule
 
