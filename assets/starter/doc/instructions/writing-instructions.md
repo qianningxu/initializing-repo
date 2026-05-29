@@ -27,3 +27,12 @@ doc/persudo/user_profiles/load_user.md
 ```
 
 Do not mix styles for preference. Choose hyphens for instruction topics; preserve underscores for mirrored code names.
+
+## Heading
+
+Repeat the filename as the first heading, converting kebab-case to title case.
+
+```text
+writing-instructions.md -> # Writing Instructions
+code-mirroring.md -> # Code Mirroring
+```
