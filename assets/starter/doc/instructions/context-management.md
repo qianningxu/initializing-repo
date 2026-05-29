@@ -1,4 +1,4 @@
-# agents.md
+# Context Management
 
 `agents.md` is a routing table, not a manual. Keep it short enough that agents can hold the whole map in context while still having room for the task, code, and relevant docs.
 
