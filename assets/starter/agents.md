@@ -2,7 +2,9 @@
 
 Repository knowledge is the system of record. This file is only a map to durable instructions.
 
-## Instructions
+## Instruction Map
+
+Whatever you do, load the following files from `doc/instructions/` when the requirement in `Load When` applies.
 
 | Instruction | Purpose | Load When |
 | --- | --- | --- |
