@@ -16,6 +16,7 @@ agents.md
 doc/
   instructions/
   persudo/
+
 src/
 test/
 data/
@@ -43,7 +44,6 @@ agents.md
 doc/
   instructions/
   persudo/
-
 src/
 test/
 data/
