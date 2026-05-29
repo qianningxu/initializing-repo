@@ -31,6 +31,8 @@ Split by attention, not just by word count. Move details out of `agents.md` when
 - Decision logs, execution plans, quality notes, and release notes.
 - Domain references, examples, and long explanations.
 
+See `instruction-creation.md` for how to name and structure new instruction files.
+
 ## Maintenance
 
 When `agents.md` starts reading like an encyclopedia, move the details into `doc/instructions/` and leave a concise pointer behind. Prefer focused instruction files over one large mixed-purpose document.
