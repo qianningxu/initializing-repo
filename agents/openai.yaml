@@ -1,0 +1,7 @@
+interface:
+  display_name: "Initializing Repo"
+  short_description: "Scaffold starter repo structure"
+  default_prompt: "Use $initializing-repo to initialize this repository with the standard agents.md, doc/instructions, doc/persudo, src, and data structure."
+
+policy:
+  allow_implicit_invocation: true
