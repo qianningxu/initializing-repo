@@ -1,10 +1,8 @@
-# Agent Guide
+Repository knowledge is the system of record. Treat this file as a map; keep durable guidance in `doc/instructions/`.
 
-Repository knowledge is the system of record. This file is only a map to durable instructions, not the place for detailed guidance.
+Before acting, check each `Load When` condition below one by one. Load every matching file from `doc/instructions/`.
 
-Whatever you do, check each row's `Load When` condition one by one. Load the matching file from `doc/instructions/` whenever its condition applies.
-
-When guidance becomes durable, put it in the relevant file under `doc/instructions/` and keep only the pointer here.
+When new guidance becomes durable, add it to the right instruction file and keep only the pointer here.
 
 | Instruction | Purpose | Load When |
 | --- | --- | --- |
