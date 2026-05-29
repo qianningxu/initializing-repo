@@ -1,8 +1,15 @@
 # Agent Guide
 
-## Role
+## What Belongs Here
 
-Use this repository's knowledge base as the system of record. Keep this file as a short map for agents, not a full manual.
+Keep `agents.md` as the small entry point for agents. This file should contain:
+
+- The repository map.
+- Non-negotiable rules agents must always follow.
+- Pointers to deeper instruction files.
+- Short workflow reminders that apply to most tasks.
+
+Do not turn this file into a manual. Put detailed, durable guidance in `doc/instructions/`.
 
 ## Repository Map
 
@@ -11,6 +18,7 @@ agents.md
 doc/
   instructions/
     context-management.md
+    code-mirroring.md
   persudo/
 
 src/
@@ -26,24 +34,11 @@ data/
 ## Required Reading
 
 - Read `doc/instructions/context-management.md` before expanding this file or creating new instruction docs.
-
-## Mirroring Rule
-
-Mirror code files and code files only:
-
-```text
-doc/persudo/<module>/<code-file>.md
-src/<module>/<code-file>
-
-doc/persudo/<module>/test/<test-code-file>.md
-src/<module>/test/<test-code-file>
-```
-
-Do not create markdown mirrors for folders, data, generated files, config files, assets, or non-code artifacts unless explicitly requested.
+- Read `doc/instructions/code-mirroring.md` before adding, moving, renaming, or deleting code files.
 
 ## Working Rules
 
-- Keep module folders aligned across `doc/persudo/` and `src/`.
-- When adding, moving, renaming, or deleting a code file, update its mirrored markdown file in the same change.
 - Keep durable decisions in `doc/instructions/`, not in chat.
+- Keep module folders aligned across `doc/persudo/` and `src/`.
+- Mirror code files only; do not mirror folders, data, generated files, config, assets, or non-code artifacts unless explicitly requested.
 - Keep `agents.md` concise; move detailed guidance into focused instruction files and leave pointers here.
