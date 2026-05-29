@@ -4,9 +4,11 @@ Repository knowledge is the system of record. This file is only a map to durable
 
 ## Instructions
 
-- `doc/instructions/architecture.md`: repository structure, path ownership, and module layout.
-- `doc/instructions/context-management.md`: how to keep `agents.md` small and maintain instruction files.
-- `doc/instructions/code-mirroring.md`: how code files mirror to blueprints under `doc/persudo/`.
+| Instruction | Purpose | Load When |
+| --- | --- | --- |
+| `doc/instructions/architecture.md` | Repository structure, path ownership, and module layout. | Always load before meaningful work. |
+| `doc/instructions/context-management.md` | How to keep `agents.md` small and maintain instruction files. | Load when editing `agents.md`, adding instructions, or reorganizing docs. |
+| `doc/instructions/code-mirroring.md` | How code files mirror to blueprints under `doc/persudo/`. | Load before adding, moving, renaming, or deleting code files. |
 
 ## Rule
 
