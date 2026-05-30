@@ -1,0 +1,365 @@
+{
+  "main": {
+    "id": "80736d1a219026ed",
+    "type": "split",
+    "children": [
+      {
+        "id": "a8c933d59e4f1deb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6f02528d11a79659",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "data/meals.base",
+                "viewName": "Table"
+              },
+              "icon": "lucide-table",
+              "title": "meals"
+            }
+          },
+          {
+            "id": "771d27e49d6e44d6",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "data/items.base",
+                "viewName": "Table"
+              },
+              "icon": "lucide-table",
+              "title": "items"
+            }
+          },
+          {
+            "id": "8d5311a0bdb5d57e",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "/Users/side/Documents/now/meal_prep",
+                  "focus": false,
+                  "profile": {
+                    "args": [
+                      "--login"
+                    ],
+                    "executable": "/bin/zsh",
+                    "followTheme": true,
+                    "name": "",
+                    "platforms": {
+                      "darwin": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": false,
+                    "rightClickAction": "copyPaste",
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "documentOverride": null
+                    },
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "profileSourceId": "darwinIntegratedDefault",
+                  "serial": null,
+                  "userTitle": ""
+                }
+              },
+              "pinned": true,
+              "icon": "terminal",
+              "title": "Terminal: zsh"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "45e1cf4d1a2059c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b5c6ad59f247e959",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "/Users/side/Documents/now/meal_prep",
+                  "focus": false,
+                  "profile": {
+                    "args": [
+                      "--login"
+                    ],
+                    "executable": "/bin/zsh",
+                    "followTheme": true,
+                    "name": "",
+                    "platforms": {
+                      "darwin": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": false,
+                    "rightClickAction": "copyPaste",
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "documentOverride": null
+                    },
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "profileSourceId": "darwinIntegratedDefault",
+                  "serial": null,
+                  "userTitle": ""
+                }
+              },
+              "pinned": true,
+              "icon": "terminal",
+              "title": "Terminal: zsh"
+            }
+          },
+          {
+            "id": "462dd970b1ed5941",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "data/meals.base",
+                "viewName": "Table"
+              },
+              "icon": "lucide-table",
+              "title": "meals"
+            }
+          },
+          {
+            "id": "cfe3a33e784902a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "data/meals/texas bbq.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "texas bbq"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "29c0ff065b7bb75f",
+    "type": "split",
+    "children": [
+      {
+        "id": "6886b1e0813e9680",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "185055fda29974d2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "585e15310d5a2d4a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3953eb002fb08b51",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "6fe6434817e352aa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "data/meals.base",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of meals"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "56c770902c7e6864",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0897be0b38bcf52",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "060fd4757051d58a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "data/meals.base",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for meals"
+            }
+          },
+          {
+            "id": "ad61cd818262dd63",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/Untitled.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Untitled"
+            }
+          },
+          {
+            "id": "461de1484960fbc4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "968d4784a37d6426",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "terminal:Open terminal": false
+    }
+  },
+  "active": "462dd970b1ed5941",
+  "lastOpenFiles": [
+    "data/meals/番茄-港式牛腩.md",
+    "data/meals/texas bbq.md",
+    "data/meals.base",
+    "agents.md",
+    "src",
+    "doc/persudo",
+    "doc/instructions/design/workflow.md",
+    "doc/instructions/design/design-code-map.md",
+    "doc/instructions/product/product-brief.md",
+    "doc/instructions/product/decision-log.md",
+    "doc/instructions/workflow",
+    "doc/instructions/product",
+    "doc/instructions/design",
+    "doc/instructions/brief.md",
+    "doc/instructions/Untitled.canvas",
+    "doc/instructions",
+    "doc",
+    "docs/brief.md",
+    "docs/product/product-brief.md",
+    "docs/product/decision-log.md",
+    "docs/design/workflow.md",
+    "docs/design/design-code-map.md",
+    "AGENTS.md",
+    "data/flow.canvas",
+    "data/items.base",
+    "data/meals/chicken thigh sub.md",
+    "data/items/basil.md",
+    "Clippings/Harness engineering leveraging Codex in an agent-first world.md",
+    "Clippings",
+    "data/meals/肉末豆腐.md",
+    "data/meals/新疆大盘鸡-黄焖鸡.md",
+    "data/items/chicken thigh, red onion, potato.md",
+    "data/items/黄焖鸡调料.md",
+    "data/items/鸡翅酱料.md",
+    "data/items/鸡汤浓缩.md",
+    "data/items/酱牛肉.md",
+    "data/items/豆干.md",
+    "data/items/腌肉酱.md",
+    "data/Untitled 1.canvas",
+    "docs/Untitled.canvas"
+  ]
+}

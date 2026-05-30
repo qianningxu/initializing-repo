@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "f6df1ac61080b3b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "a0524ef42a7f99bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b02466b73b0b7c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "assets/starter/doc/instructions/architecture.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "architecture"
+            }
+          },
+          {
+            "id": "a68e6872ce307215",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "assets/starter/agents.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "agents"
+            }
+          },
+          {
+            "id": "51b40657af8f6eec",
+            "type": "leaf",
+            "state": {
+              "type": "vscode-editor",
+              "state": {
+                "file": "assets/starter/src/agents/mirror_check.py"
+              },
+              "icon": "lucide-file",
+              "title": "mirror_check"
+            }
+          },
+          {
+            "id": "63e073d0954852b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "assets/starter/doc/persudo/agents/mirror_check.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "mirror_check"
+            }
+          },
+          {
+            "id": "f546195b70965de5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "assets/starter/doc/instructions/writing-persudo.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "writing-persudo"
+            }
+          }
+        ]
+      },
+      {
+        "id": "65405e428b7ab66e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e95e6375afa56788",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "assets/starter/doc/instructions/writing-instructions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "writing-instructions"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "01b1437fa7e9a507",
+    "type": "split",
+    "children": [
+      {
+        "id": "f516362096b6cf58",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80832f8dfa5b048e",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {},
+              "icon": "sheets-in-box",
+              "title": "File Tree"
+            }
+          },
+          {
+            "id": "d945660e1de42b9a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "assets/starter/doc/instructions/architecture.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of architecture"
+            }
+          },
+          {
+            "id": "c0d494e05d4fd05e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 289.5
+  },
+  "right": {
+    "id": "bcdff9ac3ec5f07f",
+    "type": "split",
+    "children": [],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "vscode-editor:Create Code File": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false
+    }
+  },
+  "active": "7b02466b73b0b7c6",
+  "lastOpenFiles": [
+    "assets/starter/agent-legacy.md",
+    "assets/starter/doc/persudo/agents/mirror_check.md",
+    "assets/starter/src/agents/mirror_check.py",
+    "assets/starter/agents.md",
+    "assets/starter/doc/instructions/writing-persudo.md",
+    "assets/starter/doc/instructions/workflow.md",
+    "assets/starter/doc/instructions/architecture.md",
+    "assets/starter/doc/instructions/writing-instructions.md",
+    "assets/starter/doc/instructions/obsidian-docs.md",
+    "assets/starter/src/agents/__pycache__/mirror_check.cpython-314.pyc",
+    "assets/starter/src/agents/__pycache__",
+    "assets/starter/doc/persudo/agents/test/test_mirror_check.md",
+    "assets/starter/doc/persudo/agents/test",
+    "assets/starter/doc/persudo/agents",
+    "assets/starter/src/agents/test/test_mirror_check.py",
+    "assets/starter/src/agents/test",
+    "assets/starter/src/agents",
+    "assets/starter/doc/instructions/context-management.md",
+    "assets/starter/doc/instructions/code-mirroring.md",
+    "SKILL.md",
+    "assets/starter/doc/instructions/project-workflow.md",
+    "assets/starter/doc/instructions/instruction-creation.md",
+    "assets/starter/doc/instructions/agents.md",
+    "assets/starter/doc/instructions/agents-md.md",
+    "assets/starter/doc/persudo",
+    "assets/starter/doc/instructions"
+  ]
+}

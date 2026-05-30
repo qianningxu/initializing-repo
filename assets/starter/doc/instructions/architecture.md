@@ -1,45 +1,34 @@
-Use the repository structure as the durable map of project knowledge, implementation, and data.
-
-## Structure
+Whenever you make a change, preserve this structure: instructions in `doc/instructions/`, code blueprints in `doc/persudo/`, implementation in `src/`, and raw data in `data/`.
 
 ```text
-agents.md
+.obsidian/           # Obsidian workspace configuration
+agents.md            # map of instruction files
 doc/
-  instructions/
-    architecture.md
-    context-management.md
-    code-mirroring.md
-  persudo/
-
-src/
-data/
+  instructions/      # all durable instructions
+  persudo/           # markdown blueprints for code files under src/
+    <module>/
+      test/
+src/                 # implementation code, organized by workflow or domain
+  <module>/
+    test/            # tests for that module
+data/                # raw data and structured knowledge before an app model exists
 ```
 
-## Scope
-
-- `agents.md`: map to instruction files only.
-- `doc/instructions/`: durable knowledge base and source of truth.
-- `doc/persudo/`: code-file blueprints, organized by module.
-- `src/`: implementation modules; tests live inside the module they verify.
-- `data/`: raw domain data, imports, fixtures, seed content, and structured knowledge.
-
-## Module Ownership
-
-Keep module folders aligned across `doc/persudo/` and `src/`.
+Keep module folders aligned across `doc/persudo/` and `src/`. Mirror code files and code files only:
 
 ```text
-doc/persudo/<module>/
-src/<module>/
+doc/persudo/<module>/<code-file>.md       -> src/<module>/<code-file>
+doc/persudo/<module>/test/<test-file>.md  -> src/<module>/test/<test-file>
 ```
 
-Tests live inside the implementation module:
+For each mirrored pair, top-level functions, classes, and objects must match exactly: every code object appears in the blueprint, and every documented object exists in code.
 
-```text
-src/<module>/test/
-```
+Do not create or implement a code file unless its matching `.md` blueprint exists.
 
-Their blueprints live under the matching module blueprint:
+Do not create markdown mirrors for folders, data, generated files, config files, assets, or other non-code artifacts unless explicitly requested.
 
-```text
-doc/persudo/<module>/test/
-```
+When adding, moving, renaming, or deleting a code file, update its mirrored markdown file in the same change.
+
+The starter mirror check covers `.py` files by default. Before expanding coverage, ask whether the project is Python, TypeScript, or mixed.
+
+Run `python3 src/agents/mirror_check.py --root .` every time a function is added or deleted. This is a universal repo check: run it across all configured code files, not only the file changed.
