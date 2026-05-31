@@ -3,7 +3,9 @@
 - Order rules by logical dependency: define behavior before adding checks or enforcement.
 - Be selective, specific, clear, and concise. Compress instruction text until removing more would lose required information.
 - Keep rules distinct. If two rules overlap by roughly a third or more, merge or rewrite them so each rule governs a separate behavior.
-- Avoid bullet lists with 10 or more items. Split or group them by concern.
+- Use bullets by default. Use sub-bullets to break a rule into smaller parts.
+- If a section has more than seven top-level bullets, split it with subheadings.
+- If an instruction file grows past 600 words, consider splitting it into more files.
 - Use headings only to segment substantial content; do not repeat the filename as the first heading.
 - Use XML tags when they make long, complicated prompts easier to segment and reference.
 - Before finishing an instruction edit, reread the changed text and remove repetition, weak headings, and sentences that do not change behavior.
