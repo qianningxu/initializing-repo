@@ -20,6 +20,6 @@
 
 ## Links
 
-- For instruction docs, use Obsidian wiki links for internal references: `[[path/to/page|label]]`.
-- Prefer wiki links over raw relative Markdown links for repo-internal docs.
+- For instruction docs, use Obsidian wiki links for internal references: `[[path/to/page|page]]`.
+- When renaming an instruction file, run `python3 src/agents/update_wiki_links.py --root . --old old/path --new new/path` to update wiki links.
 - Keep linked headings stable. If a heading changes, update links that target it in the same change.

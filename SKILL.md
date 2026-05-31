@@ -22,10 +22,14 @@ doc/
     writing-persudo.md
     workflow.md
   persudo/
+    agents/
+      mirror_check.md
+      update_wiki_links.md
 
 src/
   agents/
     mirror_check.py
+    update_wiki_links.py
 data/
 ```
 
