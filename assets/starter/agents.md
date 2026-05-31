@@ -1,29 +1,28 @@
-Before acting, check each `Load When` condition below one by one. Load every matching file from `doc/instructions/`.
+## Loading
 
-When a loaded instruction file links to another instruction file with `[[...]]`, read every linked instruction file before applying the instruction.
+- Before acting, check each `Load When` condition below one by one. Load every matching file from `doc/instructions/`.
+- When a loaded instruction file links to another instruction file with `[[...]]`, read every linked instruction file before applying the instruction.
 
-Use `agents.md` as a routing table, not a manual. Keep it short enough that agents can hold the whole map in context while still having room for the task, code, and relevant docs.
+## Routing
 
-When adding a new instruction file under `doc/instructions/`, update this table in the same change.
+- Use `agents.md` as a routing table, not a manual. Keep it short enough that agents can hold the whole map in context while still having room for the task, code, and relevant docs.
+- When adding a new instruction file under `doc/instructions/`, update this table in the same change.
+- Keep these in `agents.md`:
+	- The repository map.
+	- Non-negotiable rules agents must always follow.
+	- Pointers to deeper instruction files.
+	- Short workflow reminders that apply to most tasks.
+- Move details out of `agents.md` when a section becomes long, occasional, living, or reference-like.
 
-Keep these in `agents.md`:
+## Instruction Files
 
-- The repository map.
-- Non-negotiable rules agents must always follow.
-- Pointers to deeper instruction files.
-- Short workflow reminders that apply to most tasks.
+- Create an instruction file when guidance is durable, reusable, and likely to be needed across more than one work session.
+- Keep instruction files flat under `doc/instructions/` unless each topic folder would contain at least three instruction files.
+- Avoid repeated names in nested instruction paths. Do not repeat the folder name in the filename, for example prefer `writing/rules.md` over `writing/writing-rules.md`.
+- Each instruction file should have one clear job. Split when a file starts mixing unrelated concerns.
+- Update instruction files in the same change as the behavior they describe. If an instruction becomes stale, repair it or delete it.
 
-Move details out of `agents.md` when a section becomes long, occasional, living, or reference-like.
-
-Create an instruction file when guidance is durable, reusable, and likely to be needed across more than one work session.
-
-Keep instruction files flat under `doc/instructions/` unless each topic folder would contain at least three instruction files.
-
-Avoid repeated names in nested instruction paths. Do not repeat the folder name in the filename, for example prefer `writing/rules.md` over `writing/writing-rules.md`.
-
-Each instruction file should have one clear job. Split when a file starts mixing unrelated concerns.
-
-Update instruction files in the same change as the behavior they describe. If an instruction becomes stale, repair it or delete it.
+## Instruction Map
 
 | Instruction                | Scope                                                         | Load When                                                                                     |
 | -------------------------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |

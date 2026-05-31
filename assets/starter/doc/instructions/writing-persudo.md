@@ -1,4 +1,4 @@
-Use these rules only when writing or editing mirrored blueprints under `doc/persudo/`.
+- Use these rules only when writing or editing mirrored blueprints under `doc/persudo/`.
 
 ## Function Calls
 
