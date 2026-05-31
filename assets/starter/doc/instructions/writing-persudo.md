@@ -7,6 +7,7 @@
 	- Cross-file: `[[page#symbol| symbol]]`.
 - Link calls in pseudo code, target sections, diagram notes, examples, and implementation notes.
 - If the called symbol has no blueprint heading yet, create or update that blueprint before linking.
+- When renaming a linked symbol heading, run `python3 src/agents/update_wiki_links.py --root . --page page --old-heading old --new-heading new` to update heading links.
 - Do not link generic actions such as validate input, build result, loop, or return output.
 
 ## Blueprints
