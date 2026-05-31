@@ -18,9 +18,9 @@ agents.md
 doc/
   instructions/
     architecture.md
-    feature-slice.md
-    persudo.md
-    rules.md
+    writing-instructions.md
+    writing-persudo.md
+    workflow.md
   persudo/
 
 src/
