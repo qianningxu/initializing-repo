@@ -20,6 +20,8 @@ Keep linked headings stable. If a heading changes, update links that target it i
 
 Use `agents.md` as a routing table, not a manual. Keep it short enough that agents can hold the whole map in context while still having room for the task, code, and relevant docs.
 
+When adding a new instruction file under `doc/instructions/`, update `agents.md` in the same change.
+
 Keep these in `agents.md`:
 
 - The repository map.
@@ -32,6 +34,10 @@ Move details out of `agents.md` when a section becomes long, occasional, living,
 ## Instruction Files
 
 Create an instruction file when guidance is durable, reusable, and likely to be needed across more than one work session.
+
+Keep instruction files flat under `doc/instructions/` unless each topic folder would contain at least three instruction files.
+
+Avoid repeated names in instruction paths. Do not repeat the folder or collection name in the filename, for example prefer `writing/rules.md` over `writing/writing-rules.md`.
 
 Each instruction file should have one clear job. Split when a file starts mixing unrelated concerns.
 

@@ -6,7 +6,7 @@ For new source or test code:
 
 1. Ask clarifying questions in rounds of up to three. Keep asking until the structure and blueprint are testable, and explain questions as if the user has little prior context.
 2. Propose the mirrored module structure first. Show only the `doc/persudo/` tree; the matching `src/` tree is implied.
-3. After structure approval, create the `.md` blueprint before creating code. For blueprint standards, read [[writing-persudo]].
+3. After structure approval, create the `.md` blueprint before creating code. For blueprint standards, read [[persudo|persudo]].
 4. Treat the blueprint as needing review and approval before code implementation unless the user says otherwise.
 5. After blueprint approval, implement the matching code file.
 6. Keep helper logic inline unless it is reused or meaningfully reduces complexity.
