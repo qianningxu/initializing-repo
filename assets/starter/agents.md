@@ -22,6 +22,13 @@
 - Each instruction file should have one clear job. Split when a file starts mixing unrelated concerns.
 - Update instruction files in the same change as the behavior they describe. If an instruction becomes stale, repair it or delete it.
 
+## Writing Shape
+
+- Use bullets by default.
+- Use sub-bullets to break a rule into smaller parts.
+- If a section has more than seven top-level bullets, split it with subheadings.
+- If an instruction file grows past 600 words, consider splitting it into more files.
+
 ## Instruction Map
 
 | Instruction                | Scope                                                         | Load When                                                                                     |
